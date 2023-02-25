@@ -1,0 +1,70 @@
+.container section > .page4 > div {
+    display: flex;
+    flex-flow: row wrap;
+}
+.container section > .page4 > .information > div {
+    padding: 20px;
+    width: 100%;
+}
+.container section > .page4 > .information > div:first-child,
+.container section > .page4 > .information > div:last-child{
+    height: 100px;
+}
+.container section > .page4 > .information > div{
+    height: 60px;
+}
+.container section > .page4 > .information > div:not(.container section > .page4 > .information > div:first-child) {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.container section > .page4 > .information > div:first-child {
+    border-bottom: 1px solid var(--Cool_gray);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+
+.container section > .page4 > .information > div:first-child > div:first-child{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--Marine_blue);
+    grid-area: 1/1/2/3;
+}
+
+.container section > .page4 > .information > div:first-child p{
+    cursor: pointer;
+    text-decoration: underline solid var(--Cool_gray) 2px;
+    grid-area: 2/1/3/3;
+}
+.container section > .page4 > .information > div:first-child p:hover {
+    color: var(--Purplish_blue);
+    text-decoration-color: var(--Purplish_blue);
+}
+.container section > .page4 > .information > div:not(.container section > .page4 > .information > div:last-child){
+    background-color: var(--Magnolia);
+}
+
+.container section > .page4 > .information > div .price{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: var(--Marine_blue);
+    font-size: 14px;
+}
+.container section > .page4 > .information > div .bold{
+    font-weight: bold;
+    font-size: 16px;
+    grid-area: 1/3/3/4;
+}
+.container section > .page4 > .information > div:not(.container section > .page4 > .information > div:first-child) > div:first-child{
+    color: var(--Cool_gray);
+    font-size: 20px;
+}
+.container section > .page4 > .information > div:last-child div:last-child{
+    color: var(--Purplish_blue);
+    font-size: 22px;
+    font-weight: bold;
+}

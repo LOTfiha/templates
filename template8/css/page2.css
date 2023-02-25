@@ -1,0 +1,80 @@
+.container section > div > div{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px 0;
+}
+.container section > div > .first > div{
+    width: 100%;
+    /*height: 60px;*/
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 0 15px;
+    border: 2px solid var(--Light_gray);
+}
+.container section > div > .first > div > div{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.container section > div > .last{
+    height: 40px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 0 20px;
+}
+.container section > div >.last > div{
+    width: 50px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: var(--Marine_blue);
+    position: relative;
+    cursor: pointer;
+}
+.container section > div > .last > div > div{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--White);
+    top: 2px;
+    left: 2px;
+    transition: 0.3s;
+}
+.container section > div  > .last >  span{
+    font-size: 16;
+    font-weight: bold;
+    cursor: pointer;
+}
+.container section > div  > .last >  span:not(.container section > div  > .last > .active){
+    color: var(--Marine_blue);
+}
+.container section > div  > .last > .active{
+    color: var(--Cool_gray);
+}
+
+.container section > div > div > div > div h5{
+    color: var(--Marine_blue);
+}
+.container section > div > div > div > div span{
+    color: var(--Cool_gray);
+}
+.container section footer > span{
+    visibility: visible;
+}
+
+@media(min-width: 1200px){
+    .container section > div > .first{
+        justify-content: space-evenly;
+    }
+    .container section > div > .first > div{
+        width: 25%;
+        height: 150px;
+    }
+}

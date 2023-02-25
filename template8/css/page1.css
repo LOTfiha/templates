@@ -1,0 +1,34 @@
+.container section > div > div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+}
+.container section > div > div  div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+}
+.container section > div > div div label{
+    color: var(--Marine_blue);
+    font-size: 16px;
+    font-weight: bold;
+}
+.container section > div > div div input{
+    border: 1px solid var(--Cool_gray);
+    height: 50px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    outline: none;
+    display: flex;
+    align-items: center;
+}
+.container section > div > div div input::placeholder{
+    color: var(--Cool_gray);
+    font-size: var(--font-size);
+    word-spacing: 3px;
+    font-weight: 500;
+}
+
+.container section footer > span{
+    visibility: hidden;
+}
